@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
-    {% include head.html %}
+    <!-- {% include head.html %} -->
+    <div w3-include-html="head.html"></div>
     <body>
         <div class="container">
           <div class="site">
-            {% include header.html %}
+	    <!-- {% include header.html %} -->
+	    <div w3-include-html="header.html"></div>
             <div class="content">
               <div class="banner">
                 <div class="photo">
@@ -101,7 +103,8 @@
             </div>
             <div class="sidebar">
             </div>
-            {% include footer.html %}
+	    <!-- {% include footer.html %} -->
+	    <div w3-include-html="footer.html"></div>
           </div>
         </div>
     </body>
