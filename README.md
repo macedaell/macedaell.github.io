@@ -1,6 +1,5 @@
-Hi! :)
+Hi! I'm Elliot. Welcome to the website repo. 
 
-Using other people's templates for my own website. :)
+I'm still learning how to make my own website. 
 
-
-Current based off of: https://github.com/ebkendall/ebkendall.github.io (still a WIP)
+Currently based off of: https://github.com/ebkendall/ebkendall.github.io
