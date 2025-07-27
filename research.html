@@ -1,29 +1,121 @@
+<!DOCTYPE html>
+<html>
+        <!-- This is the "head" of the website... kinda think of this as importing files -->
+	<head>	
+		    <meta charset="utf-8">
+		    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		    <title>This is the page title</title>
+		    <meta name="viewport" content="width=device-width">
+		
+		    <!-- syntax highlighting CSS -->
+		    <link rel="stylesheet" href="/css/syntax.css">
+		
+		    <!-- Custom CSS -->
+		    <link rel="stylesheet" href="/css/main.css">
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="site">
+			
+				<!-- This is the header of the website -->
+				<div class="header">
+					<!-- css is used here -->
+					<h1 class="title"><b><a href="/">Elliot Maceda</a></b></h1>
+					<a class="extra" href="/">home</a>
+					<a class="extra" href="/research.html">research</a>
+				</div>
+				
 
----
-layout: default
-title: Elliot Maceda | Research
----
+				<!-- The "content" contains these things in order: the banner, the biography, the personal links, the research interests, and the news. -->
+				<div class="content">
 
-<h2><i>Peer-reviewed/Submitted papers</i></h2>
-<br>
-Note: "Time capsuled code" links to code for reproducing the numerical results of each paper.<br>
-<sup>&dagger;</sup> Advisor / Supervisor
-<br>
-<br>
+					
+					<!-- The "banner" is the portrait and contact info -->
+					<div class="banner">
+						<div class="photo">
+							<img src="/assets/elliot_maceda_portrait.JPEG" width="225px" height="294px">
+						</div>
+						<div class="contact">
+							Department of Statistics<br>
+							North Carolina State University<br>
+							<br>
+							email: <a href="mailto:elliot.maceda@gmail.com"><b>elliot.maceda@gmail.com</b></a> 
+							<br>
+						</div>
+					</div>
 
-<li> <b>E. A. Maceda</b>, E. C. Hector<sup>&dagger;</sup>, A. Lenzi<sup>&dagger;</sup>, and B. J. Reich<sup>&dagger;</sup> (202x). A variational neural Bayes framework for inference on intractable posterior distributions. <b>In Submission</b>.
-    <br>
-    Link: <a href="https://arxiv.org/abs/2404.10899" target="_blank"><b>Manuscript</b></a>.
-\   Link: <a href="https://github.com/macedaell" target="_blank"><b>Time capsuled code</b></a>.
-</li>
-<br>
+					<!-- Biography -->
+					<b>Brief biography</b>
+					<br>
+					Hello! I am a fourth year PhD candidate in the Department of Statistics at
+					North Carolina State University (NC State) under the advisory of Brian Reich <a
+					href="https://bjreich.wordpress.ncsu.edu/" target="_blank">. 
+					I graduated from Miami Unversity with an M.S. in Statistics under the advisory 
+					of Stephen Wright in the Department of Statistics. 
+					I also have a B.S. from the University of Houston (UH) in Mathematics,
+					with a Minor in Computer Science. 
 
-<li> <b>E. A. Maceda</b>, J. Miller, S. Reyes-Roza, P. Hernandez, M. Miller<sup>&dagger;</sup>, R. Sazdanovic<sup>&dagger;</sup>, N. A. Hill, N. Josephs<sup>&dagger;</sup>, and M. S. Olufsen<sup>&dagger;</sup> (202x). Branching Angles in Pulmonary Arterial Networks of Control and Pulmonary Hypertensive Mice. <b>In preparation</b>.
-</li>
-<br>
+					<!-- Personal Links -->
+					<br>
+					<br>
+					<a href="assets/elliot_maceda_cv.pdf" target="_blank"><b>Curriculum Vitae</b></a> (Last Updated: July 27, 2025)
+					<br>
+					<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0009-0005-8381-234X"
+					href="https://orcid.org/0009-0005-8381-234X" target="orcid.widget" rel="noopener noreferrer"
+					style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+					style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0009-0005-8381-234X</a></div>
+					<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://github.com/macedaell"
+					href="https://github.com/macedaell" target="github.widget" rel="noopener noreferrer"
+					style="vertical-align:top;"><img src="assets/github-mark.png"
+					style="width:1em;margin-right:.5em;" alt="Github icon">Github</a></div>
+					<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://scholar.google.com/citations?user=FLVtZuAAAAAJ&hl=en&oi=ao"
+					href="https://scholar.google.com/citations?user=FLVtZuAAAAAJ&hl=en&oi=ao" target="scholar.widget" rel="noopener noreferrer"
+					style="vertical-align:top;"><img src="assets/google_scholar_logo.png"
+					style="width:1em;margin-right:.5em;" alt="Scholar icon">Google Scholar</a></div>
+					<br>
 
-<li> <b>E. A. Maceda</b>, Z. Qu<sup>&dagger;</sup>, and B. J. Reich<sup>&dagger;</sup> (202x). A Nove Approach to NOx Emission Estimates. <b>In preparation</b>.
-</li>
-<br>
+					<!-- Research Interests -->
+					<b>Current research interests</b>
+					<ul>
+					<li> Simulation-Based Inference </li>
+					<li> Bayesian Inference </li>
+					<li> Bayesian Machine Learning </li>
+					<li> Data Assimilation </li>
+					<li> Physics-Informed Learning </li>
+					<li> Functional Data Analysis </li>
+					<li> Statistical Shape Analysis </li>
+					<li> Cardiovascular Networks </li>
+					</ul>
+					
+					<br>
+	
+	
+					<!-- The "News". This is formatted as a table -->
+					<b>News:</b>
+					<br>
+					<table>
+					<tr>
+					<td>07-27-25:</td>
+					<td> I've completed the first draft of this website! :) </td>
+					</tr>
+					</table>
+					
+					<br>
+					
+				<!-- container -->
+				</div>
 
-</ul>
+				
+				<!-- This is the footer -->
+				<div class="footer">
+				<span style="float:right">  Last updated on July 27th, 2025 </span></div>
+				</div>
+
+			<!-- site -->
+			</div>
+		
+		<!-- container -->
+		</div> 
+	</body>
+</html>
