@@ -33,70 +33,104 @@
 				<div class="content">
 
 				Uncertainty Quantification for the Life Sciences (UQ4Life) is a Research Training Group (RTG) 
-				based in NC State University led by my advisors, Brian Reich and Mette Olufsen. UQ4Life focuses 
+				based in NC State University led by my advisors, Brian J. Reich and Mette S. Olufsen. UQ4Life focuses 
 				on interdisciplinary research between statistics, mathematics, and life sciences. Through this RTG 
 				I've been able to work with people from various disciplines, allowing myself to work in research 
-				outside of statistics and math. Most of the projects I've worked on have explicit Biological and 
-				Ecological Applications. 
+				outside of statistics and math. Most of the projects I've worked on are applications in epidemiology, 
+				ecology, biology, and atmospheric science.
 				<br>
 				<br>
-				Biological and Ecological research typically relies on differential equation models that are based 
-				on theory developed in those respective fields, which are then calibrated with data. While there are 
-				established methods for fitting these models to data, it is much trickier to quantify uncertainty 
+				Biological, ecological, and atmospheric science research typically relies on differential equation models 
+				that are based on theory developed in those respective fields, which are then calibrated with data. While 
+				there are established methods for fitting these models to data, it is much trickier to quantify uncertainty 
 				in these models. For example, the data could be noisy, be from different sources, or some variables
-				may be unaccounted for. <b>My research is motivated by faithfully bringing statistical rigor and notions 
-				of uncertainty to these applications, resulting in a deeper understanding of what the data says. 
+				may be unaccounted for. 
+				<br>
+				<br>
+				<b>My research has two primary motivations. First, bringing statistical rigor and notions 
+				of uncertainty to these applications is crucial to have a deeper understanding of what the data says. 
 				If scientists and researchers better understand the uncertainty of the model and data, then decisions 
-				will be better informed, results from scientific experiments can be more clearly parsed, and future 
-				models can aim to minimize uncertainty going forward.</b>
+				will be better informed, results from scientific experiments can be more clearly identified, and future 
+				models can aim to minimize uncertainty going forward. On the other hand, evaluating these differential equation models 
+				are often computationally expensive. Additionally, many procedures, such as optimization or system monitoring, 
+				requires regular evaluation of these expensive operations. Therefore, a second motivation of my research is 
+				developing scalable methods to performance this inference, allowing scientists to perform these expensive operations 
+				much more frequently and quickly. 
+				</b>
 				<br>
 				<br>
-				My research includes a handful of recurring themes:
+				My research encompasses a few areas:
 				<br>
 				<br>
-				<h2><i>Model Calibration and Uncertainty Quantification via Bayesian Computation</i></h2>
-				Complex differential equation models are extensively used in life sciences to make predictions 
-				on our health or environment under various conditions. I use Bayesian parameter inference to 
-				calibrate these models with data to ensure they are realistic, producing accurate measurements 
-				of uncertainty to provide reliable information for scientists and decision makers. 
+				<h2><i>Simulation-based inference in differential equation models</i></h2>
+				Differential equation models are extensively used in life sciences to make predictions 
+				on our health or environment under various conditions. Bayesian inference calibrates 
+				the parameters of these models with data to ensure they are realistic and produces accurate 
+				measurements of uncertainty. However, complex differential equation models are computationally 
+				infeasible for most traditional Bayesian approaches. Simulation-based inference is the subfield 
+				of Bayesian computation that relies on repeatedly simulating data from different differential 
+				equation models to identify which models and parameter values are realistic. 
 				<br>
 				<br>
-				<h2><i>Physics-Informed Learning</i></h2>
-				I also research AI and Machine Learning models, having coded many models to be fast and powerful 
-				data-driven predictors. My research explores how to improve the predictive power of these models 
-				by leveraging information from the Biological and Ecological models.
+				<h2><i>Amortized Inference</i></h2>
+				In some situations, it is crucial to evaluate the differential equation models many times, such 
+				as in optimization or when systems must be regularly monitored. Often differential equation models 
+				are computationally expensive, taking hours to days for each evaluation, which is only exacerbated 
+				when this needs to be repeated. Amortized inference is when a framework for the differential 
+				equation, such as the differential equation itself, or a surrogate, is executed many times, and the 
+				Bayesian inference is learned using data-driven models. Then, this inference can be repeated with 
+				those computationally cheaper learned mappings.
 				<br>
 				<br>
-				<h2><i>Dimension-Reduction</i></h2>
-				Because my work incorporates Bayesian methodologies with complex, mathematical models and data from different 
-				sources, the problems are often high-dimensional and computationally expensive. Therefore, I tend 
-				to also be interested in research involving dimension reduction and computational speedups. 
+				<h2><i>Physics-Informed Learning with Heterogeneous Data Sources</i></h2>
+				Physics-informed learning is when physics is used to improve the predictive power of data-driven 
+				models by leveraging information from the Biological, Physical, Chemical, or Ecological 
+				differential equation models. Usually, this is done by adding a regularization term that ensures 
+				solutions look more similar to solutions to differential equations, but my projects are more 
+				focused on heterogeneous data sources, where a data-driven model is trained with two different 
+				datasets—one of them from a differential equation model and another consists of observed data. 
+				Bayesian-inspired approaches are used to train a data-driven model on observations while being 
+				partially informed by those differential equation models. 
 				<br>
 				<br>
-<!-- 				<h2><i>Surrogate Modeling</i></h2>
-				In some situations, it is crucial to evaluate the differential equation models many times, but often these are 
-				computationally expensive, taking hours to days for each evaluation. Surrogate modeling is when these differential 
-				equation models are approximated by simpler, often statistical models. 
+				<h2><i>Scalable High-Dimensional Inference</i></h2>
+				Because my work incorporates Bayesian methodologies with complex, mathematical models and data 
+				from different sources, the problems are often high-dimensional and computationally expensive. 
+				Therefore, I tend to also be interested in research involving dimension reduction and computational 
+				speedups.
+				<br>
+				<br>
+				<h2><i>Statistical Shape Analysis</i></h2>
+				Statistical shape analysis is an approach that uses statistical models to analyze the shape of a 
+				sample of objects. The shape of objects is represented as a collection of coordinates in 2D or 3D 
+				space after standardizing for size, orientation, and shift. Often these statistical shape models 
+				project every object to a lower-dimensional subspace before performing inference, such as 
+				prediction or effect estimation of a treatment.	
+				<br>
+				<br>
+				Although I haven't formally started research in these areas, I've always been interested, and I'm
+				keen to start new projects involving these subjects:
 				<br>
 				<br>
 				<h2><i>Data Assimilation via Bayesian Recursive Estimation</i></h2>
-				In many applications, such as weather forecasting or epidemiological studies, data is gathered over time. Here, we'd 
-				like to calibrate models repeatedly over time. Bayesian methods have been proposed to specifically allow regular updates
-				of our model parameters given streamed data. 
+				In weather forecasting, epidemiological problems, and various ecological studies, data is 
+				gathered over time. Data assimilation refers to the process of combining forecast data from 
+				a differential equation model with observations to update or fine-tune those forecasts. Data 
+				assimilation methods can be thought of as state-space estimators such as Kalman filters. This 
+				is usually implemented in a Bayesian framework, since prior beliefs can be defined as previous 
+				forecasts, and a posterior state estimate can be regularly updated with newly observed data. 
+				Sometimes this data is referred to as “streamed data”, and certain computational methods exist 
+				that can more efficiently integrate them into our posterior updates.
 				<br>
 				<br>
 				<h2><i>Prior Elicitation</i></h2>
-				Most of my research projects have been alongside leading experts in various fields. Prior Elicitation refers to improving 
-				the accuracy of the fitted models by integrating expert opinion into the model calibration process. Sometimes this can be 
-				done trivially, but sometimes the structure of the model makes this difficult. Thus, some research aims to develop techniques
-				to more easily and faithfully allow this to be done.
+				Most of my research projects have been alongside leading experts in various fields. Prior 
+				Elicitation refers to improving the accuracy of the fitted models by integrating expert opinion 
+				into the model calibration process. Sometimes this can be done trivially, but sometimes the 
+				structure of the model and prior results makes this difficult. Thus, research can be done 
+				develop techniques to more easily and faithfully allow this to be done.
 				<br>
-				<br> -->
-				<h2><i>Various Data Types</i></h2>
-				Most recently I’ve begun learning about functional data analysis and network data to give myself flexibility in leveraging 
-				different data types to these Biological and Ecological applications.
 				<br>
-				<br>				
 				</div> <!-- end of content -->
 
 				
